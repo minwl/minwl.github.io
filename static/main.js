@@ -3,7 +3,7 @@ const images = ["0.jpeg", "1.jpeg", "2.jpeg", "3.jpeg", '4.jpg', '5.jpg'];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = `../img/${chosenImage}`;
+const bgImage = `img/${chosenImage}`;
 
 document.body.style.setProperty('background-image',`url('${bgImage}`);
 
