@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+
     <style>
         body {
             line-height: 1.5;
+            font-family: 'Source Sans 3';
         }
         .navbar{
             background-color: #074f9c;
@@ -25,8 +30,8 @@
         h1 {
             color: #333;
         }
-        h2 {
-            color: #074f9c;
+        h2, h3 {
+            color: #284779;
         }
         p {
             color: #555;
@@ -35,12 +40,31 @@
         hr {
             border-top: 2px solid #ddd;
         }
+        .subtitle{
+            color: #284779;
+            /* background-color: #cad2e2; */
+            border-radius: 9999px;
+            font-weight: bold;
+            /* font-size: 0.875rem; */
+            border-radius: 100px;
+            /* margin-right: 0.5rem; */
+            /* margin-bottom: 0.5rem; */
+            padding: 0.25rem 0rem;
+            display: inline-block;
+        }
+        .content{
+            /* display: inline-block; */
+            /* font-size: 0.9rem; */
+            margin-bottom: 0.5rem;
+            padding: 0.25rem 0.75rem;
+
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="minwl.github.io">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,13 +82,13 @@
 
     <div class="container my-5">
         <div class="text-center">
-            <h2 class="display-4">
+            <h3 class="display-4">
                 <b> Ji Hong Min </b></h2>
             <p class="lead">
                 <small>
                 <a href="mailto:jhmin325@gmail.com">jhmin325@gmail.com</a> |
                 <a href="https://github.com/minwl" >Github</a> |
-                <a href="https://www.linkedin.com/in/minjh">Linked In</a>
+                <a href="https://www.linkedin.com/in/minjh">LinkedIn</a>
                 <br>
                 <a href="https://minwl.github.io/minwl/resume_2023_v1.pdf" download>Download PDF</a> (Last Updated: Nov. 2023)  </small>
 
@@ -75,31 +99,34 @@
         <section>
             <h2>Education</h2>
             <hr>
-            <p><strong>Seoul National University</strong> / M.S in Data Science</p>
-            <p><small><em>Research area: Data Visualization, Spatio-Temporal Data Analysis and Prediction<br>Thesis: Visual Analytics for Maritime Traffic Monitoring and Forecasting</em></small></p>
-            <p><strong>Georgia Institute of Technology</strong> / B.S in Mechanical Engineering</p>
-            <p><small><em>Overall GPA: 3.16/4.0, Major GPA: 3.21/4.0, Early Graduation with Honor</em></small></p>
+            <div>
+            <span class="subtitle">Seoul National University</span> <span> / M.S in Data Science </span>
+            <div class='content'> Research area: Data Visualization, Spatio-Temporal Data Analysis and Prediction</div>
+            <div class='content'> Thesis: Visual Analytics for Maritime Traffic Monitoring and Forecasting</div>
+            <span class="subtitle">Georgia Institute of Technology</span> <span>/ B.S in Mechanical Engineering</span>
+            <div class='content'> Overall GPA: 3.16/4.0, Major GPA: 3.21/4.0, Early Graduation with Honor</div>
+            </div>
         </section>
 
         <section>
             <h2>Skills</h2>
             <hr>
-            <p><strong>Programming Languages:</strong> Python, C, C++, SQL, JavaScript</p>
-            <p><strong>Data Visualization:</strong> Matplotlib, Seaborn, HTML, CSS, Flask, Stata</p>
-            <p><strong>Machine Learning/Deep Learning:</strong> Neural network based prediction, Clustering, Regression, Classification</p>
-            <p><strong>Language:</strong> Fluent in Korean and English</p>
+            <span class="subtitle">Programming Languages:</span> Python, C, C++, SQL, JavaScript</p>
+            <span class="subtitle">Data Visualization:</span> Matplotlib, Seaborn, HTML, CSS, Flask, Stata</p>
+            <span class="subtitle">Machine Learning/Deep Learning:</span> Prediction, Clustering, Regression, Classification</p>
+            <span class="subtitle">Language:</span> Fluent in Korean and English</p>
         </section>
 
         <section>
             <h2>Data Science Projects</h2>
             <hr>
-            <p><strong>Data Driven Vessel Trajectory Clustering & Prediction</strong> <br> National R&D project of Ministry of Oceans and Fisheries </p>
+            <span class="subtitle">Data Driven Vessel Trajectory Clustering & Prediction</span> <br> National R&D project of Ministry of Oceans and Fisheries </p>
             <ul>
                 <li>Utilized a clustering algorithm with a novel distance metric to extract vessel behavior for Korea maritime environment</li>
                 <li>Predicted future path based on LTE-Maritime and Automatic Identification System data with simulation and deep-learning methods</li>
                 <li>Provided visualized system to monitor and forecast maritime traffic</li>
             </ul>
-            <p><strong>Latest News Summary Service</strong> <br> Project for Data Science, 2023 Spring Coursework </p>
+            <span class="subtitle">Latest News Summary Service</span> <br> Project for Data Science, 2023 Spring Coursework </p>
             <ul>
                 <li>Developed a web-based application that retrieves the latest news data daily and provides answers to user queries</li>
                 <li>Constructed an end-to-end framework from Large Language Model to User Interface using Flask and MS Azure services</li>
@@ -109,12 +136,12 @@
         <section>
             <h2>Work Experiences</h2>
             <hr>
-            <p><strong>POSCO</strong> / Mechanical Engineering Project Manager</p>
+            <span class="subtitle">POSCO</span> / Mechanical Engineering Project Manager</p>
             <ul>
                 <li>Managed industrial plant projects including Engineering, Procurement, and Construction, specializing in utility facilities (worth up to $40M).</li>
                 <li>Conducted feasibility studies and risk management for projects.</li>
             </ul>
-            <p><strong>Seoul National University</strong> / Undergraduate Research Assistant</p>
+            <span class="subtitle">Seoul National University</span> / Undergraduate Research Assistant</p>
             <ul>
                 <li>Designed control mechanism for the landing position of Dash Robot</li>
             </ul>
