@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            line-height: 1.5;
+        }
+        .navbar{
+            background-color: #074f9c;
+        }
+        .navbar .navbar-brand {
+            color: #fff;
+        }
+        .navbar .nav-link {
+            color: #fff;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #074f9c;
+        }
+        p {
+            color: #555;
+        }
+
+        hr {
+            border-top: 2px solid #ddd;
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            color: #374151;
+            background-color: #f3f4f6;
+            border-radius: 9999px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle{
+            color: #284779;
+            /* background-color: #cad2e2; */
+            border-radius: 9999px;
+            font-weight: bold;
+            /* font-size: 0.875rem; */
+            border-radius: 100px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            padding: 0.25rem 0.75rem;
+
+        }
+        .content{
+            display: inline-block;
+            /* font-size: 0.9rem; */
+            margin-bottom: 0.5rem;
+            padding: 0.25rem 0.75rem;
+
+        }
+        .list{
+            padding: 0.25rem;
+        }
+        .sponsor{
+            font-style:italic;
+            /* padding: 0.5rem; */
+            /* margin-left: 1.5rem; */
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            padding: 0.25rem 0.75rem;
+            
+        }
+        .card-body{
+            padding: 0;
+            margin-left: 1.5rem;
+            margin-right:1.5rem;
+            margin-top:0;
+        }
+    </style>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Project Cards -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-block text-left" data-toggle="collapse" data-target="#project1">
+                        <b>Data Driven Vessel Trajectory Clustering & Prediction</b>
+                    </button>
+                </h2>
+            </div>
+            <div id="project1" class="">
+                <div class="card-body">
+                    <div class = 'sponsor'>
+                        Under National R&D project of Ministry of Oceans and Fisheries 
+                    </div>
+                    <div class="keywords"> 
+                        <span class="subtitle"> KEYWORDS </span> 
+                        <span class="tag">#Prediction</span>
+                        <span class="tag">#Clustering</span>
+                        <span class="tag">#Visualization</span>
+                        <span class="tag">#LSTM</span>
+                        <span class="tag">#Distance Metric</span>
+                        <span class="tag">#Spatio-temporal</span>
+                        <span class="tag">#Time-series</span>
+                    </div>
+                    
+                    <div class = 'duration'>
+                        <span class="subtitle"> DURATION </span>
+                        <span class ='content'> Jul. 2022 - Dec. 2023</span>
+                        
+                    </div>
+                    <div class = 'contribute'>
+                        <span class="subtitle"> MAIN CONTRIBUTION </span>
+                        <ul>
+                            <b><i>Clustering</i></b>
+                            <li class = 'list'>Devised a metric for trajectory-wise distance calculation with position, speed, direction information of vessel</li>
+                            <li class = 'list'>Comparative study on a novel distance metric with existing metrics for clustering task</li>
+                            <li class = 'list'>Utilized a clustering algorithm to extract vessel behavior for Korea maritime environment </li>
+                            <b><i>Prediction</i></b>
+                            <li class = 'list'>Predicted future path based on LTE-Maritime and Automatic Identification System data with simulation and deep-learning methods  </li>
+                            <li class = 'list'>Provided visualization system to monitor and forecast maritime traffic</li>
+                        </ul>
+                    </div>
+                    <div class = 'keyskills'>
+                        <span class="subtitle"> KEY SKILLS </span>
+                        <span class ='content'> Pytorch, Scikit-learn, Pandas, Flask, JavaScript </span>
+                    </div>
+                    <div class = 'files'>
+                        <span class="subtitle"> Achievements</span>
+                        <a class ='content'  href="http://www.glonav.org/journal/view.php?number=3372" >  paper(2022)</a>
+                        <div class ='content' >  paper(2023, working)</a>    
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="card d-none">
+            <div class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-block text-left" data-toggle="collapse" data-target="#project2">
+                        <b>Clustering on Historical Vessel Trajectory Data </b>
+                    </button>
+                </h2>
+            </div>
+            <div id="project2" class=>
+                <div class="card-body">
+                    <div class = 'sponsor'>
+                        With  National R&D project of Ministry of Oceans and Fisheries 
+                    </div>
+                    <div class="keywords"> 
+                        <span class="subtitle"> KEYWORDS </span> 
+                        <span class="tag">#Clustering</span>
+                        <span class="tag">#Visualization</span>
+                        <span class="tag">#Distance Metric</span>
+                        <span class="tag">#Spatio-temporal</span>
+                        <span class="tag">#Time-series</span>
+                    </div>
+                    
+                    <div class = 'duration'>
+                        <span class="subtitle"> DURATION </span>
+                        <span class ='content'> Mar. 2023 - Nov. 2023</span>
+                        
+                    </div>
+                    <div class = 'contribute'>
+                        <span class="subtitle"> MAIN CONTRIBUTION </span>
+                        <ul>
+                            <li class = 'list'>Developed a web-based service that retrieves the latest news data daily and provides answers to user queries.</li>
+                            <li class = 'list'>Constructed an end-to-end framework from Large Language Model to User Interface using Flask and MS Azure services.</li>
+                        </ul>
+                    </div>
+                    <div class = 'keyskills'>
+                        <span class="subtitle"> KEY SKILLS </span>
+                        <span class ='content'> Pytorch, Scikit-learn, Pandas, Flask, Javascript </span>
+                    </div>
+                    <div class = 'files d-none'>
+                        <span class="subtitle"> Achievements</span>
+                        <span class ='content' > 
+                            <a href> paper(2022)</a>
+                            <a href> paper(2023, working)</a>    
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-block text-left" data-toggle="collapse" data-target="#project3">
+                        <b>Latest News Summary Service</b>
+                    </button>
+                </h2>
+            </div>
+            <div id="project3" class=>
+                <div class="card-body">
+                    <div class = 'sponsor'>
+                        With 2023 Spring Coursework, 'Project for Data Science'
+                    </div>
+                    <div class="keywords"> 
+                        <span class="subtitle"> KEYWORDS </span> 
+                        <span class="tag">#Large Language QA Model</span>
+                        <span class="tag">#Summary Model</span>
+                        <span class="tag">#Web-based Service</span>
+                        <span class="tag">#User-Interface</span>
+                    </div>
+                    
+                    <div class = 'duration'>
+                        <span class="subtitle"> DURATION </span>
+                        <span class ='content'> Mar. 2023 - Jun. 2023</span>
+                        
+                    </div>
+                    <div class = 'contribute'>
+                        <span class="subtitle"> MAIN CONTRIBUTION </span>
+                        <ul>
+                            <li class = 'list'>Developed a web-based application that retrieves the latest news data daily and provides answers to user queries upon collected news data.</li>
+                            <li class = 'list'>Constructed an end-to-end framework from Large Language Model to User Interface using Flask and MS Azure services.</li>
+                        </ul>
+                    </div>
+                    <div class = 'keyskills'>
+                        <span class="subtitle"> KEY SKILLS </span>
+                        <span class ='content'> Python, JavaScript, Git Action, MS Azure, MongoDB</span>
+                    </div>
+                    <div class = 'files'>
+                        <span class="subtitle"> Achievements</span>
+                        <a class ='content'  href >                    report
+                        </a>
+                        <a class="content" href="https://github.com/minwl/ARA"> git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
