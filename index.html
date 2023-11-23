@@ -14,17 +14,22 @@
             line-height: 1.5;
             font-family: 'Source Sans 3';
         }
-        .navbar {
+        .nav, .navbar{
             background-color: #074f9c;
             font-size: 1.25rem;
+            padding: 2px;
         }
         .navbar .navbar-brand {
             color: #fff;
-            
         }
-        .navbar .nav-link {
-            color: #fff;
-            
+        .navbar, .nav-link {
+            color: rgba(255,255,255,.55);
+        }
+        .nav-link:hover {
+            color:rgba(255,255,255, .75);
+        }
+        .active{
+            color:white;
         }
         .container {
             margin-top: 30px;
@@ -48,29 +53,24 @@
         hr {
             border-top: 2px solid #ddd;
         }
+
     </style>
-
 </head>
-
 <body>
+    <!-- Navbar -->
+    <nav class="nav sticky-top justify-content-center">
+        <div class="nav-item active">
+        <a class="nav-link active" href="minwl.github.io">Home</a>
+        </div>
+        <div class="nav-item">
+        <a class="nav-link" href="resume.html">Resume</a>
+        </div>
+        <a class="nav-link inactive" href="portfolio.html">Portfolio</a>
+    </nav>
 
-    <!-- <ul class="nav sticky-top justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul> -->
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="minwl.github.io">Home</a> -->
+        <a class="navbar-brand" href="minwl.github.io">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -88,7 +88,7 @@
             </ul>
         </div>
     </div>
-    </nav>
+    </nav> -->
 
     <!-- Header -->
     <div class="text-white text-center py-5">
@@ -108,6 +108,8 @@
             <li>Passionate about transforming complex data into actionable insights</li>
             <li>Team player known for excellent communication skills</li>
             <li>Eager to take on challenging projects that push the boundaries of data science</li>
+            <li>Versatile with 5 years of enginering management, enriching data science with diverse engineering insights.
+            </li>
         </ul>
 
         <h2>💡 Areas of Expertise</h2>

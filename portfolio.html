@@ -14,15 +14,22 @@
             line-height: 1.5;
             font-family: 'Source Sans 3';
         }
-        .navbar{
+        .nav, .navbar{
             background-color: #074f9c;
             font-size: 1.25rem;
+            padding: 2px;
         }
         .navbar .navbar-brand {
             color: #fff;
         }
-        .navbar .nav-link {
-            color: #fff;
+        .navbar, .nav-link {
+            color: rgba(255,255,255,.55);
+        }
+        .nav-link:hover {
+            color:rgba(255,255,255, .75);
+        }
+        .active{
+            color:white;
         }
         .container {
             margin-top: 30px;
@@ -88,16 +95,20 @@
             margin-top:0;
         }
         a{
-            color:#315590;
-        }
+            color:#315590;}
+
     </style>
-
+</head>
 <body>
-
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+    <nav class="nav sticky-top justify-content-center">
+        <a class="nav-link " href="minwl.github.io">Home</a>
+        <a class="nav-link " href="resume.html">Resume</a>
+        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+    </nav>
+    <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="minwl.github.io">Home</a> -->
+        <a class="navbar-brand" href="minwl.github.io">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -115,7 +126,7 @@
             </ul>
         </div>
     </div>
-    </nav>
+    </nav> -->
 
     <div class="container my-5">
         <!-- Project Cards -->
